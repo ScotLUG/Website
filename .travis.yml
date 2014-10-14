@@ -1,0 +1,13 @@
+language: ruby
+rvm: 2.1.3
+deploy:
+  provider: heroku
+  api_key:
+    secure: Wpy1HxmyWjbT74i5rye2zErubOTVnGECi9Ot6BccFtT+k0LZA28PFW8hUkQouFoV5vaEyhOHA4S13JbNgSwf1mE6eT2OL5C7i3lDF1sOB9ndVeaZjnGTKZbiicIgPdujlTObodQqGy+hLJobm/Y9mP1o0v/pA/6O7olcKI8q7/Y=
+  app: scotlug-staging
+  strategy: api
+  on:
+    repo: ScotLUG/Website
+    branch: rails
+before_script:
+  - psql -c 'create database scotlug_test;' -U postgres
