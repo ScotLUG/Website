@@ -8,7 +8,7 @@ Getting Started
 
 To serve the website locally, ensure you have Ruby 2.1.3 and Postgresql installed, then run
 ```sh
-$ bin/rake db:setup
+$ bin/setup
 $ bin/rails server
 ```
 from the application directory.
