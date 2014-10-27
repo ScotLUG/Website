@@ -6,7 +6,7 @@ This is a very early [Rails](http://rubyonrails.org/) prototype of the new [Scot
 Getting Started
 ---------------
 
-To serve the website locally, ensure you have Ruby 2.1.3 and Postgresql installed, then run
+To serve the website locally, ensure you have Ruby 2.1.4 and Postgresql installed, then run
 ```sh
 $ bin/setup
 $ bin/rails server
