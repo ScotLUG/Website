@@ -1,4 +1,3 @@
-# coding: utf-8
 require 'test_helper'
 
 class HomeControllerTest < ActionController::TestCase
@@ -11,7 +10,7 @@ class HomeControllerTest < ActionController::TestCase
   test 'the welcome page' do
     get :welcome
     assert_response :success
-    assert_select 'title', 'Scottish Linux User Group — Welcome'
+    assert_select 'title', 'Welcome - Scottish Linux User Group'
     assert_select 'h1.page-header', 'Welcome'
     assert_select %(li.active>a[href="#{root_path}"]), 'Welcome'
   end
@@ -19,7 +18,7 @@ class HomeControllerTest < ActionController::TestCase
   test 'the about page' do
     get :about
     assert_response :success
-    assert_select 'title', 'Scottish Linux User Group — About'
+    assert_select 'title', 'About - Scottish Linux User Group'
     assert_select 'h1.page-header', 'About'
     assert_select %(li.active>a[href="#{about_path}"]), 'About'
   end
@@ -27,7 +26,7 @@ class HomeControllerTest < ActionController::TestCase
   test 'the meetings page' do
     get :meetings
     assert_response :success
-    assert_select 'title', 'Scottish Linux User Group — Meetings'
+    assert_select 'title', 'Meetings - Scottish Linux User Group'
     assert_select 'h1.page-header', 'Meetings'
     assert_select %(li.active>a[href="#{meetings_path}"]), 'Meetings'
   end

@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
   head
-    title Scottish Linux User Group — #{yield :title}
+    = title 'Scottish Linux User Group'
     = favicon_link_tag
     = favicon_link_tag 'favicon-152.png', rel: 'apple-touch-icon-precomposed', type: 'image/png'
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
@@ -21,7 +21,7 @@ html(lang="en")
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href=root_path) Scottish Linux User Group
+          a.navbar-brand(href=root_path)= content_for :title
         .navbar-collapse.collapse
           ul.nav.navbar-nav
             li class=('active' if current_page? root_path)
@@ -30,6 +30,4 @@ html(lang="en")
               a(href=meetings_path) Meetings
             li class=('active' if current_page? about_path)
               a(href=about_path) About
-    .container
-      h1.page-header= yield :title
-      = yield
+    .container= yield
