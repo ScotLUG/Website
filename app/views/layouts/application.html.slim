@@ -30,4 +30,9 @@ html(lang="en")
               a(href=meetings_path) Meetings
             li class=('active' if current_page? about_path)
               a(href=about_path) About
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href="http://www.scotlug.org.uk/wiki/Welcome") Wiki
+            li
+              a(href="https://webchat.freenode.net/?randomnick=1&channels=%23scotlug&prompt=1") IRC
     .container= yield
