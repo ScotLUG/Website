@@ -10,8 +10,8 @@ class HomeControllerTest < ActionController::TestCase
   test 'the welcome page' do
     get :welcome
     assert_response :success
-    assert_select 'title', 'Welcome - Scottish Linux User Group'
-    assert_select 'h1.page-header', 'Welcome'
+    assert_select 'title', 'Scottish Linux User Group'
+    assert_select '.jumbotron h1', 'Welcome to ScotLUG!'
     assert_select %(li.active>a[href="#{root_path}"]), 'Welcome'
   end
 
