@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '2.1.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0.beta2'
+gem 'rails', '4.2.0.beta4'
 # Use Postgres as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -18,7 +18,7 @@ gem 'slim-rails'
 # Use RDiscount for rendering Markdown in views
 gem 'rdiscount'
 # Use the Bootstrap front-end framework
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-sass', '~> 3.3.0'
 # Add browser prefixes automatically
 gem 'autoprefixer-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
