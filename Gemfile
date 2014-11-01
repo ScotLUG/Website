@@ -19,6 +19,8 @@ gem 'slim-rails'
 gem 'rdiscount'
 # Use the Bootstrap front-end framework
 gem 'bootstrap-sass', '~> 3.3.0'
+# Use Leaflet for maps.
+gem 'leaflet-rails'
 # Add browser prefixes automatically
 gem 'autoprefixer-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes

@@ -29,5 +29,6 @@ class HomeControllerTest < ActionController::TestCase
     assert_select 'title', 'Meetings - Scottish Linux User Group'
     assert_select 'h1.page-header', 'Meetings'
     assert_select %(li.active>a[href="#{meetings_path}"]), 'Meetings'
+    assert_select '#map', 1
   end
 end
