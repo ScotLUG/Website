@@ -57,4 +57,8 @@ group :development, :test do
   # Spring speeds up development by keeping your application running
   # in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # Use Pry as the shell for Rails console, and document Ruby core
+  gem 'pry-rails'
+  gem 'pry-doc'
 end
