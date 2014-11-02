@@ -2,6 +2,10 @@
 @import "bootstrap";
 @import "bootstrap/theme";
 
+body {
+    padding-top: 50px;
+}
+
 //= depend_on_asset 'layers.png'
 //= depend_on_asset 'layers-2x.png'
 @import "leaflet";
