@@ -12,7 +12,7 @@ gem 'sass-rails', '~> 5.0.0.beta1'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.1.0'
 # Use Slim templates for .html.slim views
 gem 'slim-rails'
 # Use RDiscount for rendering Markdown in views
