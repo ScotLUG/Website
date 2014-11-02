@@ -12,7 +12,6 @@ class HomeControllerTest < ActionController::TestCase
     assert_response :success
     assert_select 'title', 'Scottish Linux User Group'
     assert_select '.jumbotron h1', 'Welcome to ScotLUG!'
-    assert_select %(li.active>a[href="#{root_path}"]), 'Welcome'
   end
 
   test 'the about page' do
