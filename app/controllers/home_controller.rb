@@ -2,9 +2,9 @@ class HomeController < ApplicationController
   def about
   end
 
-  def meetings
+  def index
   end
 
-  def welcome
+  def meetings
   end
 end
