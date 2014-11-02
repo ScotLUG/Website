@@ -1,12 +1,41 @@
 .jumbotron
-  h1 <small>Welcome to</small> ScotLUG!
-  p This is the official site for the <strong>Scottish Linux User Group</strong> in Glasgow.  Take a look below to find our meets, how to talk with us, and other LUGs in Scotland.
-  .alert.alert-info This site is currently under development #{link_to 'on GitHub', 'https://github.com/ScotLUG/Website', class: 'alert-link'}.  If you can’t find something, please try #{link_to 'the wiki', 'http://www.scotlug.org.uk/wiki/Welcome', class: 'alert-link'} or give us a shout on #{link_to '#scotlug', 'https://webchat.freenode.net/?randomnick=1&channels=%23scotlug&prompt=1', class: 'alert-link'}.
-h2 Meetings
-p Meetings are held at 19:00, every last Thursday of the month, at the #{link_to 'Electron Club', 'http://www.electronclub.org/doku.php'}.  Check out our past meetings, what’s on this month, and what might be coming up on our #{link_to 'meetings', meetings_path} page.
-h2 Media
-p ScotLUG usually uses the #{link_to 'Scottish Tux', image_path('scottish_tux.svg')} to refer to itself.
-h2 Communication
-p Our IRC channel, #{link_to '#scotlug', 'https://webchat.freenode.net/?randomnick=1&channels=%23scotlug&prompt=1'}, is usually busy and helpful.  There is a #{link_to 'mailing list', 'http://mailman.lug.org.uk/mailman/listinfo/scottish'} for general announcements.
-h2 Other Linux User Groups
-p In addition to Glasgow, #{link_to 'Falkirk', 'https://plus.google.com/115476628113417487323'} and #{link_to 'Edinburgh', 'http://www.edlug.org.uk/'} both have active Linux User Groups.  The #{link_to 'UK Linux User Groups organisation', 'https://lug.org.uk'} has a list of other #{link_to 'user groups across Scotland', 'https://lug.org.uk/lugs/scotland'}.
+  h1
+    small> Welcome to
+    | ScotLUG!
+  markdown: This is the official site for the **Scottish Linux User Group** in Glasgow.  Take a look below to find our meets, how to talk with us, and other LUGs in Scotland.
+  .alert.alert-info
+    'This site is currently under development
+    a.alert-link[href="https://github.com/ScotLUG/Website"] on Github
+    '.  If you can’t find something, please try
+    a.alert-link>[href="http://www.scotlug.org.uk/wiki/Welcome"] the wiki
+    'or give us a shout on
+    a.alert-link[href="https://webchat.freenode.net/?randomnick=1&channels=%23scotlug&prompt=1"] #scotlug
+    |.
+
+markdown:
+
+  ## Meetings
+
+  Meetings are held at 19:00, every last Thursday of the month, at the [Electron Club][].  Check out our past meetings, what’s on this month, and what might be coming up on our [meetings][] page.
+
+  ## Media
+
+  ScotLUG usually uses the [Scottish Tux][] to refer to itself.
+
+  ## Communication
+
+  Our IRC channel, [#scotlug][], is usually busy and helpful.  There is a [mailing list][] for general announcements.
+
+  ## Other Linux User Groups
+
+  In addition to Glasgow, [Falkirk][] and [Edinburgh][] both have active Linux User Groups.  The [UK Linux User Groups organisation][UKLUG] has a list of other [user groups across Scotland][Scottish LUGs].
+
+  [Electron Club]: http://www.electronclub.org/doku.php
+  [meetings]:      #{meetings_path}
+  [Scottish Tux]:  #{image_path 'scottish_tux.svg'}
+  [#scotlug]:      https://webchat.freenode.net/?randomnick=1&channels=%23scotlug&prompt=1
+  [mailing list]:  http://mailman.lug.org.uk/mailman/listinfo/scottish
+  [Falkirk]:       https://plus.google.com/115476628113417487323
+  [Edinburgh]:     http://www.edlug.org.uk/
+  [UKLUG]:         https://lug.org.uk/
+  [Scottish LUGs]: https://lug.org.uk/lugs/scotland
