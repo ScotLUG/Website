@@ -8,3 +8,5 @@ deploy:
   strategy: api
 before_script:
   - psql -c 'create database scotlug_test;' -U postgres
+notifications:
+  irc: "chat.freenode.net#scotlug"
