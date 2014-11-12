@@ -36,4 +36,5 @@ html(lang="en")
     .container
       - if content_for? :page_header
         h1.page-header = content_for(:page_header)
+      = render 'announcement'
       = yield
