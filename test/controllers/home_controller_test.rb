@@ -20,6 +20,7 @@ class HomeControllerTest < ActionController::TestCase
     assert_select 'title', 'About - Scottish Linux User Group'
     assert_select 'h1.page-header', 'About'
     assert_select %(li.active>a[href="#{about_path}"]), 'About'
+    assert_select %(img[alt="Group photo"]), 1
   end
 
   test 'the meetings page' do
